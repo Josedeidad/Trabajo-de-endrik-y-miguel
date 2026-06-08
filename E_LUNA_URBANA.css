@@ -1,0 +1,169 @@
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --fondo: #f5f5f5;
+    --color-texto: #2f4f4f;
+    --titulo-letra: 'Helvetica Neue', Arial, sans-serif;
+    --letra: Arial, sans-serif;
+    --color-principal: #333333; 
+    --color-secundario: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--letra);
+    background-color: var(--blanco);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#inicio, 
+#COLECCIONES, 
+#CAMBIOS, 
+#CONTACTO {
+    background-color: var(--fondo);
+    max-width: 100%;
+}
+
+#CONTACTO {
+    text-align: left;
+}
+
+#NOSOTROS {
+    justify-content: center;
+}
+
+.CTA, button {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.encabezado {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.logotipo {
+    max-height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+.menu {
+    background-color: var(--negro);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ccc;
+}
+
+#DESTACADOS {
+    margin: 15px;
+    text-align: center;
+    border: 1px dotted var(--negro);
+}
+
+.nuevo {
+    width: 100%;
+    max-width: 900px;
+}
+
+.nuevo, .NVALLEGADA, .ropita, .PFySN, .CyD, .GT {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.cat {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.PlayerasBasicas, 
+.Chaquetas_minimalistas, 
+.Vestidos_Casual_Chica, 
+.Jeans_Urban_Fit, 
+.Sneacker_Urbanos {
+    width: 150px 150px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: var(--blanco);
+}
+
+label {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--negro);
+    background-color: var(--blanco);
+    font-family: var(--letra);
+    font-size: 1rem;
+    margin-bottom: 5px;
+    transition: border-color 0.3s ease;
+}
